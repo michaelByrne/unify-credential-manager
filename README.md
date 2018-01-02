@@ -1,30 +1,3 @@
-# graphql-tutorial / Hermes
-Full-stack GraphQL tutorials with React, Redux and Apollo
+quick-ish, dirty-ish react demo app as ui for an imaginary system in which users share credentials (netflix, etc) with other users. lists credentials and sublists of users for a given credential. clicking a credential gives details and a pane (if applicable) for adding new users and revoking access from users (deleting users). 
 
-1. Build a simple React app with GraphQL and Apollo
-2. Build a simple GraphQL server in 15 mins
-3. Adding mutations to your React/GraphQL app
-
-More ideas for later (building on each other)...
-
-... client:
-- Advanced: updating the GraphQL store after mutations
-- mutations and optimistic UI
-- Pagination
-- Developer tools for GraphQL
-- A quick tour of GraphiQL
-
-
-... server:
-- connecting to a REST backend
-- connecting to a Mongo backend
-- connecting to a SQL backend
-- advanced: structuring your GraphQL server
-- modularizing your GraphQL schema
-
-... full-stack
-- CRUD mutations in GraphQL: create
-- CRUD mutations in GraphQL: update
-- CRUD mutations in GraphQL: delete
-
-
+client and server run independently (server doesn't serve client). server is an express graphql implementation that uses an in-memory data structure, e.g. restarting the server resets everything. as a learning exercise i'm rewriting the server in sangria, but one thing at a time. 
